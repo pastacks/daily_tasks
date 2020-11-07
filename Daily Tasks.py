@@ -57,27 +57,47 @@
 
 
 # def work_schedule():
+
+dry_grocery = ["Beans", "Rice", "Spices", "Granola", "Poptarts", "Tortillas", "Oil", "Noodles", "Bread"]
+fridge_grocery = ["Milk", "Sauce", "Hummus", "Tofu", "Jelly"]
+frozen_grocery = ["Potatoes", "Veggies"]
+
+dry_grocery.extend(fridge_grocery)
+dry_grocery.extend(frozen_grocery)
+
+print(dry_grocery)
+
+
+
+
+# def groceries(current_inventory):
+
+
+
+
+
+
+
+# def chore_list(today):
+#     if today in ("Sunday", "sunday"):
+#         print("Relax after church")
+#     elif today in ("Monday", "monday"):
+#         print("Exercise, cook, clean, work")
+#     elif today in ("Tuesday", "tuesday"):
+#         print("Exercise, cook, clean, work")
+#     elif today in ("Wednesday", "wednesday"):
+#         print("Exercise, cook, clean, work")
+#     elif today in ("Thursday", "thursday"):
+#         print("Exercise, cook, clean, work")
+#     elif today in ("Friday", "friday"):
+#         print("Exercise, cook, clean, work")
+#     elif today in ("Saturday", "saturday"):
+#         print("Relax")
 #
-def chore_list(today):
-    if today in ("Sunday", "sunday"):
-        print("Relax after church")
-    elif today in ("Monday", "monday"):
-        print("Exercise, cook, clean, work")
-    elif today in ("Tuesday", "tuesday"):
-        print("Exercise, cook, clean, work")
-    elif today in ("Wednesday", "wednesday"):
-        print("Exercise, cook, clean, work")
-    elif today in ("Thursday", "thursday"):
-        print("Exercise, cook, clean, work")
-    elif today in ("Friday", "friday"):
-        print("Exercise, cook, clean, work")
-    elif today in ("Saturday", "saturday"):
-        print("Relax")
-
-
-
-
-chore_list(input("What is today?: "))
+#
+#
+#
+# chore_list(input("What is today?: "))
 
 
 # def steam(games):
