@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 
 # Grocery List WebApp project
 
@@ -8,32 +9,30 @@ grocery_dict={
     "misc":["Soap", "Sponges", "Broom"],
     }
 
-#
-def dry_base():
-    dry = grocery_dict.get("dry")
-    dry.sort()
-    print(dry)
+def print_groceries():
+    for key in grocery_dict:
+        print_grocery_section(key)
 
-def fridge_base():
-    fridge = grocery_dict.get("fridge")
-    fridge.sort()
-    print(fridge)
+def print_grocery_section(key):
+        section_list = grocery_dict.get(key)
+        section_list.sort()
+        print(section_list)
 
-def frozen_base():
-    frozen = grocery_dict.get("frozen")
-    frozen.sort()
-    print(frozen)
+def update_list(key, items):
+    grocery_copy = grocery_dict.copy()
+    for i in items:
+        grocery_copy[key].remove(i)
 
-def misc_base():
-    misc = grocery_dict.get("misc")
-    misc.sort()
-    print(misc)
+def get_input(message):
+    user_input = input(message)
+    return user_input.split(', ')
 
 
-dry_base()
-fridge_base()
-frozen_base()
-misc_base()
+if __name__ == "__main__":
 
-
-# Now attempting the dictionary version of this #
+    for key in grocery_dict:
+        message = f"what do you already have in the {key} list?"
+        print_grocery_section(key)
+        what_we_got = get_input(message)
+        update_list(key, what_we_got)
+    print_groceries()
