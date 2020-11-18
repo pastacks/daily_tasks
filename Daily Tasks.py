@@ -9,7 +9,7 @@ work_schedule={
     "Thursday":["1000 - TBD"],
     "Friday":["1200 - 2000"],
     "Satuday":["1100 - 2100"],
-}
+    }
 
 def print_schedule():
     for key in work_schedule:
@@ -24,7 +24,6 @@ def print_times(key):
 def get_input(message):
     user_input = input(message)
     return user_input
-
 
 
 if __name__ == "__main__":
