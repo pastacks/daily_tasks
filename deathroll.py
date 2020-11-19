@@ -6,6 +6,30 @@ import random
 
 
 def roll_6():
-    print(input("Which one you rollin?:" ))
+    roll = random.randint(1,6)
+    print(roll)
+
+# roll_6()
+
+# 20
+def roll_20():
+    roll = random.randint(1,20)
+    print(roll)
 
 
+
+
+# 8
+def roll_8():
+    roll = random.randint(1,8)
+    print(roll)
+
+# roll_20()
+
+while (input("Roll: ") in (6)
+
+if input("Roll: ") in (8)
+    roll_8()
+
+if input("Roll: ") in (20):
+    roll_20()
