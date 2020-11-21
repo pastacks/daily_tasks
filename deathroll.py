@@ -19,6 +19,11 @@ def roll_6():
     roll = random.randint(1,6)
     return roll
 
+def double_six():
+    roll_1 = random.randint(1,6)
+    roll_2 = random.randint(1,6)
+    return 
+
 # 8
 def roll_8():
     roll = random.randint(1,8)
@@ -48,11 +53,13 @@ def roll_20():
 
 # output
 def output():
-    dnum = input("Roll:? ")
+    dnum = input ("Roll:? ")
     if dnum in ("4"):
         print(roll_4())
     if dnum in ("6"):
         print(roll_6())
+    if dnum in ("double six"):
+        print(double_six())
     if dnum in ("8"):
         print(roll_8())
     if dnum in ("10"):
