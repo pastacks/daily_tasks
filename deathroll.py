@@ -64,6 +64,10 @@ def output():
         print(roll_12())
     if dnum in ("20"):
         print(roll_20())
+    if dnum in ("Flip", "flip"):
+        print(coin_flip())
+    return dnum
             
+    
 output()
 
