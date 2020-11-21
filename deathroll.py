@@ -6,45 +6,44 @@ import random
 #2
 def coin_flip():
     flip = random.randint(1,2)
-    print(flip)
+    return flip
 
 
 #4
 def roll_4():
     roll = random.randint(1,4)
-    print(roll)
+    return roll
 
 # 6
 def roll_6():
     roll = random.randint(1,6)
-    print(roll)
+    return roll
 
 # 8
 def roll_8():
     roll = random.randint(1,8)
-    print(roll)
+    return roll
 
 # 10
 def roll_10():
     roll = random.randint(1,10)
-    print(roll)
+    return roll
 
 # 10 (00-90)
 def roll_00():
     roll = random.randint(00,90)
-    print(roll)
+    return roll
 
 # 12
 def roll_12():
     roll = random.randint(0,12)
-    print(roll)
+    return roll
 
 
 # 20
 def roll_20():
     roll = random.randint(1,20)
-    print(roll)
-
+    return roll
 
 
 # output
