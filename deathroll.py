@@ -10,12 +10,12 @@ def coin_flip():
 
 
 #4
-def roll_4():
+def D4():
     roll = random.randint(1,4)
     return roll
 
 # 6
-def roll_6():
+def D6():
     roll = random.randint(1,6)
     return roll
 
@@ -25,51 +25,54 @@ def double_six():
     return 
 
 # 8
-def roll_8():
+def D8():
     roll = random.randint(1,8)
     return roll
 
 # 10
-def roll_10():
+def D10():
     roll = random.randint(1,10)
     return roll
 
 # 10 (00-90)
-def roll_00():
+def D00():
     roll = random.randint(00,90)
     return roll
 
 # 12
-def roll_12():
+def D12():
     roll = random.randint(0,12)
     return roll
 
 
 # 20
-def roll_20():
+def D20():
     roll = random.randint(1,20)
     return roll
 
 
 # output
 def output():
-    dnum = input ("Roll:? ")
+    dnum = input ("Action: ")
     if dnum in ("4"):
-        print(roll_4())
+        print(D4())
+    if dnum in ("/roll 2D4"):
+        print(D4())
+        print(D4())
     if dnum in ("6"):
-        print(roll_6())
+        print(D6())
     if dnum in ("double six"):
         print(double_six())
     if dnum in ("8"):
-        print(roll_8())
+        print(D8())
     if dnum in ("10"):
-        print(roll_10())
+        print(D10())
     if dnum in ("00"):
-        print(roll_00())
+        print(D00())
     if dnum in ("12"):
-        print(roll_12())
+        print(D12())
     if dnum in ("20"):
-        print(roll_20())
+        print(D20())
     if dnum in ("Flip", "flip"):
         print(coin_flip())
     return dnum
