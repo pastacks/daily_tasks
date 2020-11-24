@@ -19,10 +19,10 @@ def D6():
     roll = random.randint(1,6)
     return roll
 
-def double_six():
-    roll_1 = random.randint(1,6)
-    roll_2 = random.randint(1,6)
-    return 
+# def double_six():
+#     roll_1 = random.randint(1,6)
+#     roll_2 = random.randint(1,6)
+#     return 
 
 # 8
 def D8():
@@ -36,12 +36,12 @@ def D10():
 
 # 10 (00-90)
 def D00():
-    roll = random.randint(00,90)
+    roll = random.randint(1,10) 
     return roll
 
 # 12
 def D12():
-    roll = random.randint(0,12)
+    roll = random.randint(1,12)
     return roll
 
 
@@ -54,15 +54,19 @@ def D20():
 # output
 def output():
     dnum = input ("Action: ")
-    if dnum in ("4"):
+    if dnum in ("/roll D4"):
         print(D4())
     if dnum in ("/roll 2D4"):
         print(D4())
         print(D4())
+    if dnum in ("/roll 3D4"):
+        print(D4())
+        print(D4())
+        print(D4())
     if dnum in ("6"):
         print(D6())
-    if dnum in ("double six"):
-        print(double_six())
+    # if dnum in ("double six"):
+    #     print(double_six())
     if dnum in ("8"):
         print(D8())
     if dnum in ("10"):
