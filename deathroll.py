@@ -6,6 +6,7 @@ import random
 #2
 def coin_flip():
     flip = random.randint(1,2)
+    print("1 = Heads, 2 = Tails")
     return flip
 
 
@@ -52,34 +53,39 @@ def D20():
 
 
 # output
+
+# I need to figure out how I can just put a command that runs the function a certain amount of times 
 def output():
-    dnum = input ("Action: ")
-    if dnum in ("/roll D4"):
-        print(D4())
-    if dnum in ("/roll 2D4"):
-        print(D4())
-        print(D4())
-    if dnum in ("/roll 3D4"):
-        print(D4())
-        print(D4())
-        print(D4())
-    if dnum in ("6"):
-        print(D6())
-    # if dnum in ("double six"):
-    #     print(double_six())
-    if dnum in ("8"):
-        print(D8())
-    if dnum in ("10"):
-        print(D10())
-    if dnum in ("00"):
-        print(D00())
-    if dnum in ("12"):
-        print(D12())
-    if dnum in ("20"):
-        print(D20())
-    if dnum in ("Flip", "flip"):
+    cmd = input ("Action: ")
+    if cmd in ("Flip", "flip"):
         print(coin_flip())
-    return dnum
+    if cmd in ("D4"):
+        print(D4())
+    if cmd in ("2D4"):
+        print(D4())
+        print(D4())
+    if cmd in ("3D4"):
+        print(D4())
+        print(D4())
+        print(D4())
+    if cmd in ("6"):
+        print(D6())
+    # if cmd in ("double six"):
+    #     print(double_six())
+    if cmd in ("2D6"):
+        print(D6())
+        print(D6())
+    if cmd in ("8"):
+        print(D8())
+    if cmd in ("10"):
+        print(D10())
+    if cmd in ("00"):
+        print(D00())
+    if cmd in ("12"):
+        print(D12())
+    if cmd in ("20"):
+        print(D20())
+    
             
     
 output()
